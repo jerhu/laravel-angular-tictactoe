@@ -1,0 +1,21 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4" style="border:1px solid indianred;">
+			<h2>Ranking</h2>
+			<table class="table table-striped">
+				<tr class="">
+					<th>nickname</td>
+					<th>wins</td>
+					<th>losses</td>
+					<th>last</td>
+				</tr>
+				<tr ng-repeat="row in ranking | filter:query | orderBy:'wins'" class="">
+					<td>{{row.nickname}}</td>
+					<td>{{row.wins}}</td>
+					<td>{{row.losses}}</td>
+					<td>{{row.last}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

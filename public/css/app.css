@@ -1,0 +1,18 @@
+/* app css stylesheet */
+
+body {
+  padding-top: 20px;
+}
+
+.btn-grid {
+	height: 100px;
+	width: 100px;
+	font-size: 2em;
+}
+
+.player-current {
+	text-decoration: underline;
+}
+	.player-current:before {
+		content: "\21DB";
+	}

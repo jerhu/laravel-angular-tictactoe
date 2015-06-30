@@ -1,0 +1,32 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<h2>Home</h2>
+			<form class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="p1_nickname">Nickname</label>
+						<input type="text" class="form-control" id="p1_nickname" placeholder="Nickname P1" ng-model="p1_nickname">
+					</div>
+					<div class="form-group" ng-show="ask_password">
+						<label for="p1_password">Password</label>
+						<input type="password" class="form-control" id="p1_password" placeholder="Password P1" ng-model="p1_password">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="p2_nickname">Email address</label>
+						<input type="text" class="form-control" id="p2_nickname" placeholder="Nickname P2" ng-model="p2_nickname">
+					</div>
+					<div class="form-group" ng-show="ask_password">
+						<label for="p2_password">Password</label>
+						<input type="password" class="form-control" id="p2_password" placeholder="Password P2" ng-model="p2_password">
+					</div>
+				</div>
+				<div class="clearfix  text-right">
+					<button type="submit" class="btn btn-default" ng-click="proceed()">Proceed</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
